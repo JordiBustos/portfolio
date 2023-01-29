@@ -1,0 +1,37 @@
+@font-face { font-family: Aventa; src: url("../../fonts/Aventa-Regular.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
+
+#leftText {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap:25%;
+}
+.mainText {
+    display:flex;
+    flex-direction: column;
+}
+.name, .thirdLine, .role {
+    vertical-align: top;
+    font-size:3.14vw;
+    line-height:1.15;
+    text-transform: uppercase;
+}
+.role {
+    text-align:center;
+}
+.thirdLine {
+    text-align: end;
+}
+#verticalText {
+    display:block;
+    width:4rem;
+    writing-mode:vertical-rl;
+    text-orientation:sideways;
+    font-size: 1.7rem;
+    transform: rotate(180deg);
+}
+#verticalText:hover {
+    transform: rotate(270deg);
+}

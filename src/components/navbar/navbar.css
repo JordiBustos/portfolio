@@ -1,0 +1,46 @@
+@font-face { font-family: "Arges Condensed Black"; src: url("../../fonts/Arges-BlackCondensed.woff2") format("woff2"); font-style: normal; font-display: swap; }
+
+nav {
+  grid-column: 2 / 3;
+  grid-row: auto;
+}
+#navWrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arges Condensed Black', sans-serif;
+}
+
+[class*="text-stroke-fill-"] {
+  font-size: 10vw;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  color: white;
+  -webkit-text-stroke: 0px;
+  white-space: nowrap;
+}
+
+[class*="text-stroke-fill-"]:before {
+  content: attr(data-fill);
+  position: absolute;
+  white-space: nowrap;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.4, 1);
+  -webkit-text-stroke: 0.5px #fff;
+}
+[class*="-fill-ttb"]:before {
+  top: 0;
+  bottom: 100%;
+  left: 0;
+}
+[class*="-fill-ttb"]:hover:before {
+  bottom: 0;
+}
+[class*="text-stroke-fill-"]:hover {
+  cursor: pointer;
+  color: transparent;
+}

@@ -1,0 +1,45 @@
+.about {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    font-family: 'Aventa', sans-serif;
+}
+.about h1 {
+    font-size:7rem;
+    line-height:1.15;
+}
+.about h2 {
+    font-size:1.5vw;
+    line-height:1.15;
+}
+.about h2 span, .about p span {
+    color:rgb(140, 140, 255);
+    text-transform: uppercase;
+}
+.about p span {
+    font-size:2.2rem;
+}
+.about p {
+    font-size:2rem;
+    letter-spacing: 1px;
+    margin-top:1.2rem;
+    line-height: normal;
+}
+.about h3 {
+    font-size:4rem;
+    margin-top:3rem;
+}
+.stackContainer {
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;
+    margin-top:2rem;
+}
+.stackContainer span {
+    color:white;
+    font-size:1.6rem;
+    background-color: #3A3A7B;
+    flex-basis:calc(25% - 4rem);
+    padding:1.2rem;
+    text-align: center;
+    border-radius: 5px;
+}

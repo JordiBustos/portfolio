@@ -1,0 +1,44 @@
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    font-family: 'Aventa', sans-serif;
+}
+.projectsContainer {
+    overflow-y: scroll;
+    max-height:75vh;
+}
+.projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.projects ul p, .projects ul p a {
+    transition: 0.2s;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    opacity: 1;
+    width: max-content;
+    text-decoration: none;
+}
+.projects li {
+    width:max-content;
+}
+.projects ul p:hover {
+    opacity: .4;
+}
+.projects ul p a:hover {
+    color: rgb(140, 140, 255);
+}
+.projectTitle {
+    font-size: 2.6rem;
+    font-weight: 200;
+    opacity: 1;
+    margin-left:1rem;
+}
+.projectInfo {
+    font-weight: bold;
+    font-size:1.3rem;
+}
