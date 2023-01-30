@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import "./projects.css";
 import Project from "./Project";
-import { projects } from "./projectsList.js"
+import { projects } from "./projectsList.js";
 import { useRef } from "react";
 
 const Projects = () => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
-  let width;  
-  if (windowSize.current[0] < 800 ) {
+  let width;
+  if (windowSize.current[0] < 800) {
     width = "90%";
   } else if (windowSize.current[0] < 1300) {
     width = "65vw";

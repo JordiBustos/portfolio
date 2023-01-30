@@ -4,8 +4,8 @@ import { useRef } from "react";
 
 const About = () => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
-  let width;  
-  if (windowSize.current[0] < 800 ) {
+  let width;
+  if (windowSize.current[0] < 800) {
     width = "90%";
   } else if (windowSize.current[0] < 1300) {
     width = "65vw";
@@ -18,35 +18,58 @@ const About = () => {
       className="about"
       initial={{ width: 0 }}
       animate={{ width: width }}
-      exit={{ x: "-100vw", transition: { duration: 1}}}
+      exit={{ x: "-100vw", transition: { duration: 1 } }}
     >
       <h1 aria-label="Hi Stranger!">
-        <span aria-hidden="true" className="titleHover">H</span>
-        <span aria-hidden="true" className="titleHover">i</span>
-        {" "}
-        <span aria-hidden="true" className="titleHover">S</span>
-        <span aria-hidden="true" className="titleHover">t</span>
-        <span aria-hidden="true" className="titleHover">r</span>
-        <span aria-hidden="true" className="titleHover">a</span>
-        <span aria-hidden="true" className="titleHover">n</span>
-        <span aria-hidden="true" className="titleHover">g</span>
-        <span aria-hidden="true" className="titleHover">e</span>
-        <span aria-hidden="true" className="titleHover">r</span>
-        <span aria-hidden="true" className="titleHover">!</span>
+        <span aria-hidden="true" className="titleHover">
+          H
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          i
+        </span>{" "}
+        <span aria-hidden="true" className="titleHover">
+          S
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          t
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          r
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          a
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          n
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          g
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          e
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          r
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          !
+        </span>
       </h1>
+      <p>Born in 2001 in Buenos Aires, Argentina.</p>
       <p>
-        Born in 2001 in Buenos Aires, Argentina.
+        I believe that websites are the core of the internet and are essential
+        for information sharing.
       </p>
       <p>
-        I believe that websites are the core of the internet and are essential for information sharing. 
+        With the mission of making the web more accessible to everyone,
+        protecting user privacy and creating pixel perfect websites, I have been
+        working for the development team of the{" "}
+        <span>Government of the Province of Buenos Aires</span> for more than a
+        year and a half.
       </p>
       <p>
-      With the mission of making the web more accessible to everyone, protecting user privacy and creating pixel perfect websites,
-      I have been working for the development team of the <span>Government of the Province of Buenos Aires</span> for more than a year and a half.
-      </p>
-      <p>
-        I completed the first year of a computer science degree and now I
-        am pursuing a degree in mathematics both at the <span> </span>
+        I completed the first year of a computer science degree and now I am
+        pursuing a degree in mathematics both at the <span> </span>
         <a
           target="_blank"
           title="Go to Universidad Nacional de La Plata's website"
@@ -72,11 +95,21 @@ const About = () => {
       </p>
 
       <h3 aria-label="Stack">
-        <span aria-hidden="true" className="titleHover">S</span>
-        <span aria-hidden="true" className="titleHover">t</span>
-        <span aria-hidden="true" className="titleHover">a</span>
-        <span aria-hidden="true" className="titleHover">c</span>
-        <span aria-hidden="true" className="titleHover">k</span>
+        <span aria-hidden="true" className="titleHover">
+          S
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          t
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          a
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          c
+        </span>
+        <span aria-hidden="true" className="titleHover">
+          k
+        </span>
       </h3>
       <div className="stackContainer">
         <span>HTML5</span>

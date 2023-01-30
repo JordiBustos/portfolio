@@ -1,10 +1,8 @@
-import './App.css';
-import {
-  BrowserRouter
-} from 'react-router-dom';
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
-import Footer from './components/footer/Footer';
-import AnimatedRoutes from './components/AnimatedRoutes';
+import Footer from "./components/footer/Footer";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
@@ -15,7 +13,7 @@ function App() {
         <Footer />
       </BrowserRouter>
     </div>
-  )
+  );
 }
 
 export default App;

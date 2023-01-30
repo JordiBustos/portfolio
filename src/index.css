@@ -38,15 +38,15 @@ h1 {
 
 /* width */
 ::-webkit-scrollbar {
-  width: .6rem;
+  width: 0.6rem;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #292929; 
+  box-shadow: inset 0 0 5px #292929;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(140, 140, 255);
@@ -55,9 +55,8 @@ h1 {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff7987; 
+  background: #ff7987;
 }
-
 
 .App {
   width: 100vw;
@@ -76,7 +75,7 @@ nav,
   padding: 0 3.3333333333vw 0;
 }
 .projects {
-  padding-right:0;
+  padding-right: 0;
 }
 a {
   color: #ff7987;
@@ -103,19 +102,19 @@ a:hover {
   text-transform: none;
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   body {
     overflow-y: scroll;
   }
   .App {
-    gap:0;
+    gap: 0;
   }
 }
 
-@media (max-width:1300px) {
+@media (max-width: 1300px) {
   .App {
     grid-template-columns: repeat(3, 1fr);
-  }   
+  }
 }
 
 @keyframes rubberBand {
@@ -136,15 +135,14 @@ a:hover {
   }
 
   65% {
-    transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
 
   75% {
-    transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
 
   to {
     transform: scale3d(1, 1, 1);
   }
-} 
-
+}

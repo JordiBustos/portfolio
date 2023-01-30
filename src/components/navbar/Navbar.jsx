@@ -5,10 +5,20 @@ const Navbar = () => {
   return (
     <nav>
       <div id="navWrapper">
-        <Link title="Go to Home page" to="/" className="text-stroke-fill-ttb" data-fill="HOME">
+        <Link
+          title="Go to Home page"
+          to="/"
+          className="text-stroke-fill-ttb"
+          data-fill="HOME"
+        >
           HOME
         </Link>
-        <Link title="Go to About page" to="/about" className="text-stroke-fill-ttb" data-fill="ABOUT">
+        <Link
+          title="Go to About page"
+          to="/about"
+          className="text-stroke-fill-ttb"
+          data-fill="ABOUT"
+        >
           ABOUT
         </Link>
         <Link
