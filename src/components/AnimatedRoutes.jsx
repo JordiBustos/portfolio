@@ -4,15 +4,14 @@ import About from "./about/About";
 import Projects from "./projects/Projects";
 import { AnimatePresence } from "framer-motion";
 
-const AnimatedRoutes = () => {
+const AnimatedRoutes = ( { width } ) => {
   const location = useLocation();
-
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Main />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/" element={<Main width={width} />} />
+        <Route path="/about" element={<About width={width}/>} />
+        <Route path="/projects" element={<Projects width={width} />} />
       </Routes>
     </AnimatePresence>
   );

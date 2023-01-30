@@ -1,24 +1,14 @@
 import "./about.css";
 import { motion } from "framer-motion";
-import { useRef } from "react";
 
-const About = () => {
-  const windowSize = useRef([window.innerWidth, window.innerHeight]);
-  let width;
-  if (windowSize.current[0] < 800) {
-    width = "90%";
-  } else if (windowSize.current[0] < 1300) {
-    width = "65vw";
-  } else if (windowSize.current[0] < 2000) {
-    width = "calc(50vw - 3.33333334vw)";
-  }
-
+const About = ({width}) => {
   return (
     <motion.div
       className="about"
       initial={{ width: 0 }}
       animate={{ width: width }}
       exit={{ x: "-100vw", transition: { duration: 1 } }}
+      style={{width: width}}
     >
       <h1 aria-label="Hi Stranger!">
         <span aria-hidden="true" className="titleHover">

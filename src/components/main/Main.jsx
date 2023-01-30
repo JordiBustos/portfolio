@@ -1,23 +1,15 @@
 import "./main.css";
 import { motion } from "framer-motion";
-import { useRef } from "react";
 
-const Main = () => {
-  const windowSize = useRef([window.innerWidth, window.innerHeight]);
-  let width;
-  if (windowSize.current[0] < 800) {
-    width = "90%";
-  } else if (windowSize.current[0] < 1300) {
-    width = "65vw";
-  } else if (windowSize.current[0] < 2000) {
-    width = "calc(50vw - 3.33333334vw)";
-  }
+const Main = ({width}) => { 
+  console.log(width)
   return (
     <motion.div
       initial={{ width: 0 }}
       animate={{ width: width }}
       exit={{ x: "-100vw", transition: { duration: 1 } }}
       id="leftText"
+      style={{ width: width }}
     >
       <div className="mainText">
         <h1 className="name" aria-label="Jordi Bustos">
