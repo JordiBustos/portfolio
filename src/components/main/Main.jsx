@@ -1,8 +1,7 @@
 import "./main.css";
 import { motion } from "framer-motion";
 
-const Main = ({width}) => { 
-  console.log(width)
+const Main = ({width}) => {
   return (
     <motion.div
       initial={{ width: 0 }}

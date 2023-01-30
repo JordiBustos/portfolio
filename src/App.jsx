@@ -41,7 +41,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        {width}
         <AnimatedRoutes width={width} />
         <Footer />
       </BrowserRouter>
