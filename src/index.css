@@ -108,11 +108,12 @@ a:hover {
   }
 }
 
-@media (max-width:1000px) {
+@media (max-height:800px) {
   body {
     overflow-y: scroll;
   }
 }
+
 
 @media (max-width: 1300px) {
   .App {
