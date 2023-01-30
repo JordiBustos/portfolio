@@ -29,3 +29,56 @@
 #socialMedia li img:hover {
     filter: invert(60%)
 }
+
+@media (max-width:1600px) {
+    .socialContainer {
+        align-self: end;
+    }
+}
+
+@media (max-width: 1300px) {
+    .socialContainer {
+        grid-column: 1 / 4;
+    }
+}
+
+@media (max-width:810px) {
+    .socialContainer {
+        text-align: start;
+    }
+    #socialMedia li:nth-child(4) {
+        margin-left: 25%;
+    }
+    #socialMedia li:nth-child(5) {
+        margin-right: 2.5rem;
+    }
+}
+
+@media (max-width:650px) {
+    #socialMedia li:nth-child(4) {
+        margin-left: 15%;
+    }
+    #socialMedia li:nth-child(5) {
+        margin-right: 2.5rem;
+    }
+}
+
+@media (max-width:550px) {
+    #socialMedia li:nth-child(4) {
+        margin-left: 10%;
+        font-size:1rem
+    }
+    #socialMedia li:nth-child(5) {
+        margin-right:0rem;
+        font-size:1rem;
+    }
+}
+
+@media (max-width:400px) {
+    #socialMedia li:nth-child(4) {
+        margin-left: 2%;
+    }
+    #socialMedia li:nth-child(5) {
+        margin-right:2rem;
+    }
+}

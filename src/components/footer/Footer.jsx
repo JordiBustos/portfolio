@@ -5,7 +5,7 @@ import mail from "../../assets/mail.svg";
 
 const Footer = () => {
     return (
-        <div class="socialContainer">
+        <div className="socialContainer">
         <ul id="socialMedia">
           <li>
             <a href="https://github.com/JordiBustos"

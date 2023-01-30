@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     gap:25%;
+    padding: calc(6.66667vh - 0.5vw) 3.3333333333vw 0;
 }
 .mainText {
     display:flex;
@@ -34,4 +35,61 @@
 }
 #verticalText:hover {
     transform: rotate(270deg);
+}
+.secondTitle {
+    color: rgb(140, 140, 255);
+    font-size:1.8rem;
+}
+@media (max-width:1300px) {
+    #leftText {
+        gap: 10%;
+        grid-column: 1 / 3;
+    }
+    .name, .thirdLine, .role {
+        font-size: 4.2vw;
+    }
+    #verticalText {
+        font-size: 2.2rem;
+        margin-left:2rem;
+    }
+}
+
+@media (max-width:1000px) {
+    #leftText {
+        gap: 0;
+        justify-content: space-around;
+    }
+    .name, .thirdLine, .role {
+        font-size: 4.7vw;
+    }
+    #verticalText {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width:800px) {
+    #leftText {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        gap:0;
+        padding-top:0;
+    }
+    #verticalText {
+        display:none;
+    }
+}
+
+@media (max-width:600px) {
+    #leftText {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        gap:0;
+        padding-top:0;
+    }
+    #verticalText {
+        display:none;
+    }
+    .name, .thirdLine, .role {
+        font-size: 5.5vw;
+    }
 }

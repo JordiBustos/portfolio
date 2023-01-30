@@ -22,6 +22,7 @@ body {
   padding: 0;
   background-color: #1a1a1a;
   overflow-y: hidden;
+  text-align: justify;
 }
 
 body {
@@ -67,15 +68,15 @@ h1 {
   grid-template-rows: auto;
   gap: 3%;
 }
-
-#leftText,
 nav,
-.about,
-.projects {
+.about {
   padding: calc(6.66667vh - 0.5vw) 3.3333333333vw 0;
 }
 #socialMedia {
   padding: 0 3.3333333333vw 0;
+}
+.projects {
+  padding-right:0;
 }
 a {
   color: #ff7987;
@@ -100,6 +101,21 @@ a:hover {
 }
 .noUppercase {
   text-transform: none;
+}
+
+@media (max-width:800px) {
+  body {
+    overflow-y: scroll;
+  }
+  .App {
+    gap:0;
+  }
+}
+
+@media (max-width:1300px) {
+  .App {
+    grid-template-columns: repeat(3, 1fr);
+  }   
 }
 
 @keyframes rubberBand {
@@ -131,3 +147,4 @@ a:hover {
     transform: scale3d(1, 1, 1);
   }
 } 
+

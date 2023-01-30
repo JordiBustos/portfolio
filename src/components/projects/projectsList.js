@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "Posgrados de la Provincia",
+    accesibility: "",
+    date: "2023 (In progress)",
+    language: "Drupal",
+    link: false,
+  },
+  {
     title: "Buenos Aires Crea",
     accesibility: "Go to Buenos Aires Crea website",
     date: "2022",
@@ -19,13 +26,6 @@ export const projects = [
     date: "2022 (contributed)",
     language: "Drupal",
     link: "https://agendaparticipativa.gba.gob.ar/",
-  },
-  {
-    title: "Sitio de promoción de Posgrados de la Provincia",
-    accesibility: "",
-    date: "2023 (In progress)",
-    language: "Drupal",
-    link: false,
   },
   {
     title: "Qunitas",
